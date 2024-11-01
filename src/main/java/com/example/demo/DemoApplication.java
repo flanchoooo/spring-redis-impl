@@ -70,7 +70,7 @@ public class DemoApplication {
 //		}
 
 
-		@Scheduled(fixedRate = 10)
+		@Scheduled(fixedRate = 1)
 		public void queryDatabaseEveryFiveSeconds() {
 			List<Hot> hotEntries = hotRepository.findAll();
 			//System.out.println("Queried 'hot' table at " + System.currentTimeMillis());
